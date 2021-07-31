@@ -3,9 +3,10 @@ import SearchPage from '../../src/pageObjects/SearchPage';
 import CatInfoPage from '../../src/pageObjects/CatInfoPage';
 import { after } from 'mocha';
 import api from '../../src/api/coreApi';
+import allureReporter from "@wdio/allure-reporter";
 
 let storeText = null;
-const catDesc: any = { name: 'Агата', description: 'Глаза цвета Агата', gender: 'female' };
+const catDesc: any = { name: 'Моеимя', description: 'Глаза цвета Агата', gender: 'female' };
 
 describe('Редактирование кота', async () => {
   before('Создание кота (если его еще нет)', async  () => {
@@ -32,7 +33,7 @@ describe('Редактирование кота', async () => {
     await (await CatInfoPage.description).addValue(' Это очень хорошее имя');
     await (await CatInfoPage.saveDescription).click();
     const text = await (await CatInfoPage.description).getText();
-    expect(text).not.toEqual(storeText);
+    expect(text).not.toHaveText(storeText);
   });
 
   after(async () => {
@@ -40,6 +41,6 @@ describe('Редактирование кота', async () => {
     await (await CatInfoPage.description).setValue(storeText);
     await (await CatInfoPage.saveDescription).click();
     const text = await (await CatInfoPage.description).getText();
-    expect(text).toEqual(storeText);
+    expect(text).toHaveText(storeText);
   });
 });

@@ -1,0 +1,35 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "0-0",
+    "children" : [ {
+      "name" : "Проверка сортировки лайков в рейтинге",
+      "uid" : "60a23ee8b5b57019",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627730199221,
+        "stop" : 1627730200686,
+        "duration" : 1465
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "Chrome-92.0.4515.107" ]
+    }, {
+      "name" : "Проверка сортировки дизлайков в рейтинге",
+      "uid" : "85859a88ab78462f",
+      "parentUid" : "516fe00eea05ad99e936fa729b55eff4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1627730200687,
+        "stop" : 1627730201208,
+        "duration" : 521
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "Chrome-92.0.4515.107" ]
+    } ],
+    "uid" : "516fe00eea05ad99e936fa729b55eff4"
+  } ]
+}

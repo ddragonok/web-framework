@@ -1,0 +1,110 @@
+{
+  "uid" : "60a23ee8b5b57019",
+  "name" : "Проверка сортировки лайков в рейтинге",
+  "fullName" : "Проверка рейтинга котов.Проверка сортировки лайков в рейтинге",
+  "historyId" : "3b1e45202f86eae512b56e3119de1157",
+  "time" : {
+    "start" : 1627730199221,
+    "stop" : 1627730200686,
+    "duration" : 1465
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Выполнен переход на страницу [Страница рейтинга]",
+      "time" : {
+        "start" : 1627730199225,
+        "stop" : 1627730199225,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false,
+      "stepsCount" : 0
+    }, {
+      "name" : "Проверка сортировки лайков в рейтинге",
+      "time" : {
+        "start" : 1627730200674,
+        "stop" : 1627730200686,
+        "duration" : 12
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "de4e62856c54518b",
+        "name" : "Ожидаемое значение",
+        "source" : "de4e62856c54518b.txt",
+        "type" : "text/plain",
+        "size" : 42
+      }, {
+        "uid" : "2caca6791acc81c9",
+        "name" : "Фактическое значение",
+        "source" : "2caca6791acc81c9.txt",
+        "type" : "text/plain",
+        "size" : 42
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true,
+      "stepsCount" : 0
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 2
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "framework",
+    "value" : "wdio"
+  }, {
+    "name" : "language",
+    "value" : "javascript"
+  }, {
+    "name" : "thread",
+    "value" : "0-0"
+  }, {
+    "name" : "suite",
+    "value" : "Проверка рейтинга котов"
+  }, {
+    "name" : "testClass",
+    "value" : "Проверка рейтинга котов"
+  }, {
+    "name" : "testMethod",
+    "value" : "Проверка сортировки лайков в рейтинге"
+  }, {
+    "name" : "package",
+    "value" : "Проверка рейтинга котов"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "Chrome-92.0.4515.107"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "60a23ee8b5b57019.json",
+  "parameterValues" : [ "Chrome-92.0.4515.107" ]
+}

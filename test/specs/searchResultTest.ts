@@ -2,7 +2,7 @@ import MainPage from '../../src/pageObjects/MainPage';
 import SearchPage from '../../src/pageObjects/SearchPage';
 import api from '../../src/api/coreApi';
 
-const searchPattern = 'А';
+const searchPattern = 'Б';
 let searchResultsNamesByApi = null;
 
 describe('Перебор списка выборки котов', async () => {
@@ -44,7 +44,7 @@ describe('Перебор списка выборки котов', async () => {
     expect(searchResultsNamesByApi).toEqual(searchResultsNames);
   });
 
-  it('Проверка получения списка котов поисковой выдачи по части имени (get parent node text)', async () => {
+  it.only('Проверка получения списка котов поисковой выдачи по части имени (get parent node text)', async () => {
     const searchInput = await MainPage.searchInput;
     const findCatNameBtn = await MainPage.findCatNameBtn;
 

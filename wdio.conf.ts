@@ -16,12 +16,12 @@ exports.config = {
       browserName: 'chrome',
     },
   ],
-  logLevel: 'info',
+  logLevel: 'silent',
   bail: 0,
   baseUrl: 'https://meowle.qa-fintech.ru/',
   waitforTimeout: 10_000,
   connectionRetryTimeout: 120_000,
-  services: ['chromedriver'],
+  services: [['selenium-standalone', { drivers: { chrome: { version: '92.0.4515.107' }} }]],
   framework: 'mocha',
   reporters: [
     [
